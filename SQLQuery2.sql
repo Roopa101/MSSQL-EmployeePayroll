@@ -30,6 +30,11 @@ select salary from  employee_Payroll where name = 'billi'
 
 select * from employee_payroll where start_date between '2019-01-01' and GETDATE()
 
+Alter table employee_payroll add gender char (1)
+update employee_payroll set gender = 'M' where name ='bill' or name= 'charlie'
+update employee_payroll set gender = 'F' where name= 'jack'
+select * from employee_Payroll
+
 
 
 
