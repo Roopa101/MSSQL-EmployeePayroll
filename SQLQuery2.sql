@@ -23,3 +23,5 @@ insert into employee_payroll (id,name,salary,start_date) values
 (3,'charlie', 240000.0,'2019-01-03')
 
 set identity_insert employee_payroll off
+
+select * from employee_Payroll
