@@ -37,5 +37,11 @@ select * from employee_Payroll
 
 
 
-
-
+select AVG(salary) 'Avg Salary' from employee_Payroll where gender = 'M' group by gender
+select AVG(salary) 'Avg Salary'from employee_Payroll where gender = 'F' group by gender
+select SUM(salary) 'Total Salary'from employee_Payroll where gender = 'M' group by gender
+select SUM(salary) 'Total Salary'from employee_Payroll where gender = 'F' group by gender
+select MIN(salary) 'Min Salary'from employee_Payroll where gender = 'M' group by gender
+select MIN(salary) 'Min Salary'from employee_Payroll where gender = 'F' group by gender
+select MAX(salary) 'Max Salary' from employee_Payroll where gender = 'M' group by gender
+select MAX(salary) 'Max Salary'from employee_Payroll where gender = 'F' group by gender
