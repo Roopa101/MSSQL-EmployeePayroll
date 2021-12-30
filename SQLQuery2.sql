@@ -25,3 +25,12 @@ insert into employee_payroll (id,name,salary,start_date) values
 set identity_insert employee_payroll off
 
 select * from employee_Payroll
+
+select salary from  employee_Payroll where name = 'billi'
+
+select * from employee_payroll where start_date between '2019-01-01' and GETDATE()
+
+
+
+
+
