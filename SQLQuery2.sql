@@ -45,3 +45,13 @@ select MIN(salary) 'Min Salary'from employee_Payroll where gender = 'M' group by
 select MIN(salary) 'Min Salary'from employee_Payroll where gender = 'F' group by gender
 select MAX(salary) 'Max Salary' from employee_Payroll where gender = 'M' group by gender
 select MAX(salary) 'Max Salary'from employee_Payroll where gender = 'F' group by gender
+
+
+
+alter table employee_Payroll Add Department varchar(10) ;
+alter table employee_Payroll Add Phonenumber varchar(15) ;
+Alter table employee_payroll add Address varchar(50) not null default 'India'
+update employee_Payroll set Department = 'CS' where name = 'Billi';
+update employee_Payroll set Department = 'Mech' where name = 'jack';
+update employee_Payroll set Department = 'Production' where name = 'Charlie';
+select * from employee_Payroll
