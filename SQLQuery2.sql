@@ -93,3 +93,14 @@ select * from employee_Payroll
 
 
 
+----UC11----
+
+use payroll_service
+
+Create table Department1
+(
+id int identity (1,1) primary key,
+DepartmentName varchar(50) not null
+);
+
+select * from  Department1
